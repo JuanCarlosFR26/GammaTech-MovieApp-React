@@ -39,11 +39,7 @@ export const InfoFilm = () => {
 
     const myFavourite = async (data) => {
 
-        // await setDoc(db, "Favourites", "Movies"), {
-        //     name: data.title,
-        //     id: data.id
-        // }
-        const movieRef = doc(db, "Favourites", "Movie-Favourite");
+        const movieRef = doc(db, "Favourites", movies.id.toString());
         await setDoc(movieRef, { Film: data.title }, { merge: true })
     }
 

@@ -340,6 +340,10 @@ body {
     cursor: pointer;
 }
 
+.favourite:hover {
+    cursor: pointer;
+}
+
 .btnSearch {
     width: 200px;
     height: 45px;
